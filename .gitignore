@@ -23,3 +23,5 @@ packages/node_modules/@node-red/editor-client/public
 docs
 !packages/node_modules/**/docs
 .vscode
+packages/node_modules/@node-red/editor-client/src/js/**/*.d.ts
+packages/node_modules/@node-red/editor-client/src/js/**/*.js.map

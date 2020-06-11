@@ -119,7 +119,7 @@ module.exports = function(grunt) {
         },
         concat: {
             options: {
-                separator: ";",
+                separator: ";\r\n", // (/r/n added for transpiling monaco.ts to js, as it adds a source map reference at the end as "//")
             },
             build: {
                 src: [
@@ -172,6 +172,7 @@ module.exports = function(grunt) {
                     "packages/node_modules/@node-red/editor-client/src/js/ui/palette-editor.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/editor.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/editors/*.js",
+                    "packages/node_modules/@node-red/editor-client/src/js/ui/monaco.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/event-log.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/tray.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/clipboard.js",
